@@ -86,7 +86,7 @@ app.post("/login", async (req, res) => {
          );
          user.token=token;
          user.password=undefined;
-      }
+      
       //send a token in cookie
       //cookie section
       const option={
@@ -98,7 +98,7 @@ app.post("/login", async (req, res) => {
          token,
          user
       })
-
+   }
    } catch (error) {
       console.log(error)
    }
