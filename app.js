@@ -57,7 +57,7 @@ app.post("/register", async (req, res) => {
 
 
 
-      res.status(200).json({ user, token })
+      res.status(200).json({ user })
    } catch (error) {
       console.log(error)
    }
